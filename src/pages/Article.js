@@ -10,8 +10,8 @@ const Article = () => {
       // Wrapping inside a React fragment so that we can return multiple elements
       <>
         <h1>{article.title}</h1>
-        {article.content.map((paragraph) => (
-          <p>{paragraph}</p>
+        {article.content.map((paragraph, i) => (
+          <p key={i}>{paragraph}</p>
         ))}
       </>
     );
