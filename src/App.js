@@ -1,4 +1,5 @@
 import './App.css';
+import NavBar from './NavBar';
 import Home from './pages/Home';
 import About from './pages/About';
 import ArticlesList from './pages/ArticlesList';
@@ -13,7 +14,7 @@ function App() {
     // Wrap the enter user interface inside a BrowserRouter
     <BrowserRouter>
       <div className="App">
-        <h1>My Awesome Blog</h1>
+        <NavBar />
         <div id="page-body">
           {/* To define when each of these pages get displayed, we will wrap them inside the Routes component */}
           <Routes>
