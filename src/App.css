@@ -19,11 +19,30 @@ h3, h4 {
 
 nav {
   border-bottom: 4px solid black;
-  text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
   background: white;
+  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px; /* Add padding for spacing */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%; 
+   
 }
 
 nav ul {
@@ -34,15 +53,15 @@ nav ul {
 
 nav li {
   display: inline-block;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 10px;
 }
 
 nav a {
   text-decoration: none;
   color: black;
   font-weight: bold;
-  padding: 24px 32px;
+  padding: 15px;
+  transition: background-color 0.75s ease;
 }
 
 nav a:hover {
@@ -108,7 +127,6 @@ input, textarea {
 }
 
 .nav-right {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  display: flex;
+  align-items: center;
 }
