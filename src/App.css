@@ -41,8 +41,12 @@ nav {
 .nav-img {
   width: 55px;
   height: 55px;
-  border-radius: 50%; 
-   
+  border-radius: 50%;
+  transition: transform 0.3s ease; 
+}
+
+.nav-img:hover {
+  transform: scale(1.4);
 }
 
 nav ul {
@@ -61,10 +65,10 @@ nav a {
   color: black;
   font-weight: bold;
   padding: 15px;
-  transition: background-color 0.75s ease;
+  transition: background-color 1.0s ease;
 }
 
-nav a:hover {
+.nav-right a:hover {
   background: black;
   color: white;
 }
@@ -129,4 +133,8 @@ input, textarea {
 .nav-right {
   display: flex;
   align-items: center;
+}
+
+.justified-text {
+  text-align: justify;
 }
