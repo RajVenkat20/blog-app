@@ -1,6 +1,6 @@
 // This file is created outside the 'pages' folder because it is essentially not a page
 import { Link } from 'react-router-dom';
-import icon from './Raj.jpg'
+import icon from './images/Raj.jpg';
 
 const NavBar = () => {
     return (
