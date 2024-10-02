@@ -55,8 +55,8 @@ const Article = () => {
         <h1>{article.title}</h1>
         <div className="upvotes-section">
           {user 
-              ? <button onClick={addUpvote}>UpVote</button>
-              : <button>Log in to upvote</button>}
+              ? <button className="btnAnimation" onClick={addUpvote}>UpVote</button>
+              : <button className="btnAnimation">Log in to upvote</button>}
           <br></br>
         </div>
         <div>
@@ -69,7 +69,7 @@ const Article = () => {
             ? <AddCommentForm
             articleName={articleId}
             onArticleUpdated={updatedArticle => setArticleInfo(updatedArticle)} />
-            : <button>Log in to add a comment</button>}
+            : <button className="btnAnimation">Log in to add a comment</button>}
         <CommentsList comments={articleInfo.comments} />
       </>
     );

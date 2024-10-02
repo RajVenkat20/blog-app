@@ -50,7 +50,7 @@ const CreateAccountPage = () => {
                 placeholder="Re-enter your password"
                 value={confPassword}
                 onChange={e => setConfPassword(e.target.value)} />
-            <button onClick={createAccount} className="logInButton">Create Account</button>
+            <button onClick={createAccount} className="btnAnimation">Create Account</button>
             <h4>Already have an account? <Link to="/login">Log in</Link></h4>
         </>
     );

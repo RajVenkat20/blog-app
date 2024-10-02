@@ -35,7 +35,7 @@ const AddCommentForm = ({ articleName, onArticleUpdated }) => {
                         rows="4" 
                         cols="50" />
             </label>
-            <button onClick={addComment}>Add Comment</button>
+            <button className="btnAnimation" onClick={addComment}>Add Comment</button>
         </div>
     )
 }
