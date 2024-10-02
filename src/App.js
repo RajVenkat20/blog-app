@@ -5,6 +5,8 @@ import About from './pages/About';
 import ArticlesList from './pages/ArticlesList';
 import Article from './pages/Article';
 import NotFound from './pages/NotFound';
+import LoginPage from './pages/LoginPage';
+import CreateAccountPage from './pages/CreateAccountPage';
 
 // use react-router-dom to render only that page whose route we are on
 // importing stuff from react-router-dom that will allow us to define when these pages get displayed
@@ -26,6 +28,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/articles" element={<ArticlesList />} />
             <Route path="/articles/:articleId" element={<Article />} />
+            <Route path="/login" element={<LoginPage />}/>
+            <Route path="/create-account" element={<CreateAccountPage />}/>
             {/* The below route is displayed except for the ones we've defined up above */}
             <Route path="*" element={<NotFound />} />
           </Routes>
