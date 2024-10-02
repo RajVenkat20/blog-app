@@ -8,12 +8,15 @@ import axios from 'axios';
 import NotFound from "./NotFound";
 import CommentsList from "../components/CommentsList";
 import AddCommentForm from "../components/AddCommentForm";
+import useUser from '../hooks/useUser';
 import articles from "./article-content";
 
 // describing them as function components and not as class components as they are outdated practices
 const Article = () => {
     const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: []});    // Using default values in case the server responds nothing
     const { articleId } = useParams();
+
+    const { user, isLoading } = useUser();
         
     /* By using the second arg '[]' in useEffect, we are basically want it to call this callback function only
        when the value inside the array changes
@@ -51,15 +54,22 @@ const Article = () => {
       <>
         <h1>{article.title}</h1>
         <div className="upvotes-section">
-          <button onClick={addUpvote}>UpVote</button>
+          {user 
+              ? <button onClick={addUpvote}>UpVote</button>
+              : <button>Log in to upvote</button>}
+          <br></br>
+        </div>
+        <div>
           <p>This article has {articleInfo.upvotes} upvote(s)</p>
         </div>
         {article.content.map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
+          <p className="justified-text" key={i}>{paragraph}</p>
         ))}
-        <AddCommentForm
+        {user
+            ? <AddCommentForm
             articleName={articleId}
             onArticleUpdated={updatedArticle => setArticleInfo(updatedArticle)} />
+            : <button>Log in to add a comment</button>}
         <CommentsList comments={articleInfo.comments} />
       </>
     );
