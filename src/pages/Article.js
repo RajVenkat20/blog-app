@@ -13,7 +13,8 @@ import articles from "./article-content";
 
 // describing them as function components and not as class components as they are outdated practices
 const Article = () => {
-    const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: []});    // Using default values in case the server responds nothing
+    const [articleInfo, setArticleInfo] = useState({ upvotes: 0, comments: [], canUpvote: false});    // Using default values in case the server responds nothing
+    const { canUpvote } = articleInfo;
     const { articleId } = useParams();
 
     const { user, isLoading } = useUser();
@@ -26,20 +27,26 @@ const Article = () => {
          inside it and place our data fetch from server code inside it
       */
       const loadArticleInfo = async () => {
+        const token = user && await user.getIdToken();
+        const headers = token ? { authtoken: token } : {};
         // Use the axios.get function to make a get request to the server endpoint
-        const response = await axios.get(`/api/articles/${articleId}`);
+        const response = await axios.get(`/api/articles/${articleId}`, { headers });
         const newArticleInfo = response.data;
         setArticleInfo(newArticleInfo);
       }
 
-      loadArticleInfo();      
-    }, []); 
+      if( isLoading ) {
+        loadArticleInfo();
+      }      
+    }, [isLoading, user]); 
 
     const article = articles.find(article => article.name === articleId);   
 
     // A function that makes a request to the server telling it that we want to upvote an article
     const addUpvote = async () => {
-      const response = await axios.put(`/api/articles/${articleId}/upvote`);
+      const token = user && await user.getIdToken();
+      const headers = token ? { authtoken: token } : {};
+      const response = await axios.put(`/api/articles/${articleId}/upvote`, null, { headers });
       const updatedArticle = response.data;
       setArticleInfo(updatedArticle);
     }
@@ -55,7 +62,7 @@ const Article = () => {
         <h1>{article.title}</h1>
         <div className="upvotes-section">
           {user 
-              ? <button className="btnAnimation" onClick={addUpvote}>UpVote</button>
+              ? <button className="btnAnimation" onClick={addUpvote}>{canUpvote ? 'Upvote' : 'Already Upvoted!'}</button>
               : <button className="btnAnimation">Log in to upvote</button>}
           <br></br>
         </div>

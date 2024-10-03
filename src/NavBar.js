@@ -1,8 +1,13 @@
 // This file is created outside the 'pages' folder because it is essentially not a page
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { getAuth, signOut } from 'firebase/auth';
 import icon from './images/Raj.jpg';
+import useUser from './hooks/useUser';
 
 const NavBar = () => {
+    const { user } = useUser();
+    const navigate = useNavigate();
+
     return (
         <nav>
             <div className="nav-container">
@@ -25,6 +30,15 @@ const NavBar = () => {
                         <Link to="/articles">Articles</Link>
                     </li>
                 </ul>
+                <div className="nav-right">
+                    {user
+                        ? <button className="btnAnimation" onClick={() => {
+                            signOut(getAuth());
+                        }}>Log Out</button>
+                        : <button className="btnAnimation" onClick={() => {
+                            navigate('/login');
+                        }}>Log In</button>}
+                </div>
             </div>
         </nav>
     );
