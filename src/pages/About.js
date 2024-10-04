@@ -1,3 +1,5 @@
+import SocialMedia from "../components/SocialMedia";
+
 // describing them as function components and not as class components as they are outdated practices
 const About = () => (
     <>
@@ -14,6 +16,7 @@ const About = () => (
     <p className="justified-text">
         I am passionate about creating innovative solutions and learning the latest advancements in AI and software engineering. In my spare time, I enjoy working on side projects that push my limits, such as developing AI-driven applications and exploring new frameworks.
     </p>
+    <SocialMedia />
     </>
 );
 
