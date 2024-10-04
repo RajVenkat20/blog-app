@@ -21,13 +21,13 @@ const NavBar = () => {
                 {/* Navigation links */}
                 <ul className="nav-right">
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link className="menuOptions" to="/">Home</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link className="menuOptions" to="/about">About</Link>
                     </li>
                     <li>
-                        <Link to="/articles">Articles</Link>
+                        <Link className="menuOptions" to="/articles">Articles</Link>
                     </li>
                 </ul>
                 <div className="nav-right">

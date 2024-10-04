@@ -35,7 +35,7 @@ const Article = () => {
         setArticleInfo(newArticleInfo);
       }
 
-      if( isLoading ) {
+      if( !isLoading ) {
         loadArticleInfo();
       }      
     }, [isLoading, user]); 
