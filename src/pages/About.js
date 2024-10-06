@@ -37,19 +37,22 @@ const About = () => {
             }}>Visit Blog</button>
             <button className="btnAnimation about-buttons" onClick={viewResume}>View Resume</button>
         </div>  
-        <hr/>
-        <h2 className="sectionName"> EDUCATION</h2>
+        <hr className="interSectionHr"/>
+        <h2 className="sectionName">EDUCATION</h2>
         <Education 
                   degree="Master of Science in Computer Science"
                   university="Purdue University"
                   yearRange="Jan 2023 - Dec 2024"
                   coursework="Algorithm Design, Analysis, and Implementation, Data Communication and Computer Networks, Machine Learning, Information Security, Database Systems, Cryptography, Artificial Intelligence, Compiling and Programming Systems, AI and Security, Reasoning with LLMs."/>
-        <hr />
         <Education 
                   degree="Bachelor of Engineering in Computer Science"
                   university="Vasavi College of Engineering"
                   yearRange="Jul 2017 - Aug 2021"
-                  coursework="Algorithm Design, Analysis, and Implementation, Data Communication and Computer Networks, Machine Learning, Information Security, Database Systems, Cryptography, Artificial Intelligence, Compiling and Programming Systems, AI and Security, Reasoning with LLMs."/>                  
+                  coursework="Design and Analysis of Algorithms, Distributed Systems and Cloud Computing, Artificial Intelligence, Machine Learning, Computer Networks, Information Security, OOPS, Discrete Mathematics, Data Structures and Algorithms, Operating Systems, Computer Architecture, Databases."/>          
+        <hr className="interSectionHr"/>
+        <h2 className="sectionName">WORK EXPERIENCE</h2>
+        <Experience/>
+        <Experience />
         <SocialMedia />
         </>
     );

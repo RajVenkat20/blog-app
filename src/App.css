@@ -17,6 +17,11 @@ h3, h4 {
   margin-bottom: 0;
 }
 
+.interSectionHr {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
 nav {
   border-bottom: 2px solid black;
   position: fixed;
@@ -274,7 +279,7 @@ input, textarea {
 }
 
 .sectionName {
-  margin-top: 30px;
+  margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -284,11 +289,11 @@ input, textarea {
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+  margin-bottom: 25px;
 }
 
 .outermost-div:hover {
   transform: scale(1.05);
-  
 }
 
 /* Style for the second div element */
