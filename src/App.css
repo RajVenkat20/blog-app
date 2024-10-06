@@ -272,3 +272,80 @@ input, textarea {
 .about-buttons:hover{
   transform: scale(1.2)
 }
+
+.sectionName {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.outermost-div {
+  
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+}
+
+.outermost-div:hover {
+  transform: scale(1.05);
+  
+}
+
+/* Style for the second div element */
+.second-div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.column {
+  width: 48%;
+}
+
+.left-column {
+  font-size: 20px;
+  text-align: left;
+  width: 85%;
+}
+
+.right-column {
+  color: #6C757D;
+  font-weight: bold;
+  text-align: right;
+}
+
+.right-column p {
+  margin-top: 27px;
+  font-size: 15px;
+}
+
+/* Style for the coursework section */
+.coursework {
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+}
+
+.univName {
+  background-color: #0077B5;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 125px;
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+.univName:hover {
+  background-color: #fff;
+  color: #000000;
+  border: 2px solid #0077B5;
+}
+
+
