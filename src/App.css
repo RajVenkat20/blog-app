@@ -18,7 +18,7 @@ h3, h4 {
 }
 
 nav {
-  border-bottom: 4px solid black;
+  border-bottom: 2px solid black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -160,7 +160,7 @@ input, textarea {
 
 .btnAnimation {
   font-weight: bold;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease, transform 0.3s ease;
 }
 
 .btnAnimation:hover {
@@ -231,4 +231,44 @@ input, textarea {
 
 .discord {
   color: #5865F2;
+}
+
+.bio-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.45);
+}
+
+.about-content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.bio-img-container p {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-buttons:hover{
+  transform: scale(1.2)
 }

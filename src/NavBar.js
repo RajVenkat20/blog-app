@@ -14,17 +14,17 @@ const NavBar = () => {
                 {/* Add the image on the left */}
                 <div className="nav-left">
                     <Link to="/">
-                        <img src={icon} alt="Your Picture" className="nav-img" />
+                        <img src={icon} alt="Raj Venkat Reddy Mavuram" className="nav-img" />
                     </Link>
                 </div>
                 
                 {/* Navigation links */}
                 <ul className="nav-right">
                     <li>
-                        <Link className="menuOptions" to="/">Home</Link>
+                        <Link className="menuOptions" to="/about">About</Link>
                     </li>
                     <li>
-                        <Link className="menuOptions" to="/about">About</Link>
+                        <Link className="menuOptions" to="/">Blog</Link>
                     </li>
                     <li>
                         <Link className="menuOptions" to="/articles">Articles</Link>
