@@ -52,7 +52,6 @@ const About = () => {
         <hr className="interSectionHr"/>
         <h2 className="sectionName">WORK EXPERIENCE</h2>
         <Experience/>
-        <Experience />
         <SocialMedia />
         </>
     );

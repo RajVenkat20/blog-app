@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const SocialMedia = () => {
   return (
-    <>
+    <footer>
         <div className="made-by">
             <p>Made by Raj Venkat Reddy Mavuram</p>
         </div>
@@ -50,7 +50,7 @@ const SocialMedia = () => {
             <FontAwesomeIcon icon={faXTwitter} className="icon twitter" />
           </a>
         </div>
-    </>
+    </footer>
   );
 };
 

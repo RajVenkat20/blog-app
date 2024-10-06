@@ -31,6 +31,7 @@ nav {
   
 }
 
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -285,15 +286,15 @@ input, textarea {
 }
 
 .outermost-div {
-  
   border-radius: 8px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
+  
   margin-bottom: 25px;
 }
 
 .outermost-div:hover {
   transform: scale(1.025);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.45);
 }
 
 /* Style for the second div element */
