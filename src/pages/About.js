@@ -1,6 +1,6 @@
 import SocialMedia from "../components/SocialMedia";
 import Education from "../components/Education";
-import Work from "../components/Work";
+import Experience from "../components/Experience";
 import profilePic from "../images/Raj.jpg";
 import { useNavigate } from "react-router-dom";
 
@@ -38,6 +38,7 @@ const About = () => {
             <button className="btnAnimation about-buttons" onClick={viewResume}>View Resume</button>
         </div>  
         <hr/>
+
         <SocialMedia />
         </>
     );
