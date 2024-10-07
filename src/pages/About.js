@@ -3,6 +3,8 @@ import Education from "../components/Education";
 import Experience from "../components/Experience";
 import profilePic from "../images/Raj.jpg";
 import { useNavigate } from "react-router-dom";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
 
 // describing them as function components and not as class components as they are outdated practices
 const About = () => {
@@ -52,6 +54,12 @@ const About = () => {
         <hr className="interSectionHr"/>
         <h2 className="sectionName">WORK EXPERIENCE</h2>
         <Experience/>
+        <hr className="interSectionHr"/>
+        <h2 className="sectionName">SKILLS</h2>
+        <Skills />
+        <hr className="interSectionHr"/>
+        <h2 className="sectionName">PROJECTS</h2>
+        <Projects />
         <SocialMedia />
         </>
     );

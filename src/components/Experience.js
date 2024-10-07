@@ -66,7 +66,7 @@ const Experience = () => {
             <span className="univName">Oracle India Pvt. Ltd.</span>
           </div>
           <div className="column right-column">
-            <p>Jan 2021 - Dec 2022</p>
+            <p>Aug 2022 - Dec 2022</p>
           </div>
         </div>
         <div className="jobRole">
@@ -105,7 +105,25 @@ const Experience = () => {
               Ensured software quality by performing code reviews for software
               engineers across the organization.
             </li>
-            <li>
+          </ul>
+        </div>
+      </div>
+      <div className="outermost-div">
+        <div className="second-div">
+          <div className="column left-column">
+            <p>
+              <b>Software Engineer I</b>
+            </p>
+            <br />
+            <span className="univName">Oracle India Pvt. Ltd.</span>
+          </div>
+          <div className="column right-column">
+            <p>Jun 2021 - Jul 2022</p>
+          </div>
+        </div>
+        <div className="jobRole">
+          <ul>
+          <li>
               Took lead in designing three asynchronous REST web-services
               reducing interdependency in codebase.
             </li>
@@ -124,7 +142,25 @@ const Experience = () => {
               Collaborated with geo-distributed teams to assure seamless
               integration and delivery of software components.
             </li>
-            <li>
+          </ul>
+        </div>
+      </div>
+      <div className="outermost-div">
+        <div className="second-div">
+          <div className="column left-column">
+            <p>
+              <b>Software Engineer Intern</b>
+            </p>
+            <br />
+            <span className="univName">Oracle India Pvt. Ltd.</span>
+          </div>
+          <div className="column right-column">
+            <p>Jan 2021 - June 2021</p>
+          </div>
+        </div>
+        <div className="jobRole">
+          <ul>
+          <li>
               Employed JUnit to redesign Oracle’s internal API unit testing,
               reducing testing and debugging time by 85%.
             </li>
