@@ -10,7 +10,7 @@ const ArticlesListComponent = ({ articles }) => {
               <div className="articles">
               <Link key={article.name} className="article-list-item" to={`/articles/${article.name}`}>
                 <h3>{article.title}</h3>
-                <p>{article.content[0].substring(0, 150)}...</p>
+                {/* <p className='justified-text'>{article.beginning[1]}...</p> */}
               </Link>
               </div>
               <hr></hr>

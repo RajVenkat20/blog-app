@@ -1,13 +1,12 @@
 import SocialMedia from "../components/SocialMedia";
 import blogImg from '../images/Blog.jpeg';
-import useUser from "../hooks/useUser";
 
 // describing them as function components and not as class components as they are outdated practices
 const Blog = () => {
     return (
         <>
         <p className="articleTitle">Hello! Welcome to my blog!</p>
-        <img className="articleImage" src={blogImg} alt="Blog Cover Image" style={{ maxWidth: '100%'}} />
+        <img className="articleImage" src={blogImg} alt="Blog Cover" style={{ maxWidth: '100%'}} />
         <p className="justified-text">
         Hello and welcome to my corner of the internet, where technology meets curiosity! In a world that’s constantly evolving, staying on top of the latest advancements is not just an option, but a necessity. This blog is my way of diving deep into the cutting-edge trends shaping the world today, and I invite you to join me on this journey through the dynamic and fast-paced realm of technology.
         </p>
@@ -27,6 +26,7 @@ const Blog = () => {
         So grab a cup of coffee, take a look around, and don’t hesitate to join the conversation. Let’s explore together! 
         </p>
         <h2>Featured Articles</h2>
+        <h1>Content to be added soon!</h1>
         <SocialMedia/>
         </>
     );

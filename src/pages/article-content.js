@@ -3,6 +3,7 @@ import sysDesign from '../images/articles/SystemsDesign.png';
 const articles = [
     {
         name: 'learn-react',
+        publishedOn: "10/8/2024 1:30PM EST",
         title: 'Systems Design 101',
         content: [
             <p className='justified-text'>As a software engineer, I've come to realize that systems design is not just about drawing diagrams or throwing together a bunch of APIs. It's an art form—a delicate balance between functionality, scalability, and efficiency. Whether you're building a microservice architecture or designing a distributed system, the goal is to create something that's robust yet flexible enough to grow with your business needs.</p>,
@@ -38,6 +39,7 @@ const articles = [
         altText: 'sysDesign'
     },    {
         name: 'learn-node',
+        publishedOn: "10/8/2024 1:30PM EST",
         title: 'How to Build a Node Server in 10 Minutes',
         content: [
             `In this article, we're going to be talking looking at a very quick way
@@ -64,6 +66,7 @@ const articles = [
         altText: 'sysDesign'
     },     {
         name: 'mongodb',
+        publishedOn: "10/8/2024 1:30PM EST",
         title: 'Learn MongoDB',
         content: [
             `Today is the day I talk about something which scares most people: resumes.

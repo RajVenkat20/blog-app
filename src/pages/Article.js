@@ -39,7 +39,7 @@ const Article = () => {
       if( !isLoading ) {
         loadArticleInfo();
       }      
-    }, [isLoading, user]); 
+    }, [isLoading, user, articleId]); 
 
     const article = articles.find(article => article.name === articleId);   
 
@@ -68,6 +68,8 @@ const Article = () => {
           <br></br>
         </div>
         <div>
+          <p><i>Published on: {article.publishedOn}</i></p>
+          
           <p>This article has {articleInfo.upvotes} upvote(s)</p>
         </div>
         {article.image && <img className="articleImage" src={article.image} alt={article.altText} style={{ maxWidth: '100%'}} />}
