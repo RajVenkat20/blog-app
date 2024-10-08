@@ -10,6 +10,7 @@ import CommentsList from "../components/CommentsList";
 import AddCommentForm from "../components/AddCommentForm";
 import useUser from '../hooks/useUser';
 import articles from "./article-content";
+import SocialMedia from "../components/SocialMedia";
 
 // describing them as function components and not as class components as they are outdated practices
 const Article = () => {
@@ -59,7 +60,7 @@ const Article = () => {
     return (
       // Wrapping inside a React fragment so that we can return multiple elements
       <>
-        <h1>{article.title}</h1>
+        <p className="articleTitle">{article.title}</p>
         <div className="upvotes-section">
           {user 
               ? <button className="btnAnimation" onClick={addUpvote}>{canUpvote ? 'Upvote' : 'Already Upvoted!'}</button>
@@ -69,15 +70,17 @@ const Article = () => {
         <div>
           <p>This article has {articleInfo.upvotes} upvote(s)</p>
         </div>
+        {article.image && <img className="articleImage" src={article.image} alt={article.altText} style={{ maxWidth: '100%'}} />}
         {article.content.map((paragraph, i) => (
-          <p className="justified-text" key={i}>{paragraph}</p>
+          [paragraph]
         ))}
         {user
             ? <AddCommentForm
             articleName={articleId}
             onArticleUpdated={updatedArticle => setArticleInfo(updatedArticle)} />
-            : <button className="btnAnimation">Log in to add a comment</button>}
+            : <button className="commentBtn btnAnimation">Log in to add a comment</button>}
         <CommentsList comments={articleInfo.comments} />
+        <SocialMedia/>
       </>
     );
 }

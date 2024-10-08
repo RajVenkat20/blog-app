@@ -1,3 +1,5 @@
+import SocialMedia from "../components/SocialMedia";
+
 // describing them as function components and not as class components as they are outdated practices
 const Home = () => (
     <>
@@ -26,6 +28,8 @@ const Home = () => (
         interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
         consequat quam. Vivamus accumsan dui in facilisis aliquet.,
     </p>
+    <h2>Featured Articles</h2>
+    <SocialMedia/>
     </>
 );
 

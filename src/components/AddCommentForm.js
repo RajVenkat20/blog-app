@@ -27,7 +27,7 @@ const AddCommentForm = ({ articleName, onArticleUpdated }) => {
     return (
         <div id="add-comment-form">
             <h3>Add a comment</h3>
-            {user && <p> You are posting as {user.email}</p>}
+            {user && <p> You're posting as {user.email}</p>}
             <br></br>
             <label>
                 Comment:
