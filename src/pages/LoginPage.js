@@ -31,7 +31,7 @@ const LoginPage = () => {
     
     return (
         <>
-            <h1>Log In</h1>
+            <p className="articleTitle">Log In</p>
             {error && <p className="error">{error}</p>}
             <input
                 placeholder="Your email address"

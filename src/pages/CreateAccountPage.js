@@ -34,7 +34,7 @@ const CreateAccountPage = () => {
     
     return (
         <>
-            <h1>Create Account</h1>
+            <p className="articleTitle">Create Account</p>
             {error && <p className="error">{error}</p>}
             <input
                 placeholder="Your email address"

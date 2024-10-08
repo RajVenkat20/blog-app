@@ -6,7 +6,7 @@ const ArticlesList = () => {
     return (
     // Wrapping inside a React fragment so that we can return multiple elements  
       <>
-        <h1>Articles</h1>
+        <p className="articleTitle">Articles</p>
         <ArticlesListComponent articles={articles}/>
       </>
     );

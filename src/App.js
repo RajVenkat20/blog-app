@@ -1,6 +1,6 @@
 import './App.css';
 import NavBar from './NavBar';
-import Home from './pages/Home';
+import Blog from './pages/Blog';
 import About from './pages/About';
 import ArticlesList from './pages/ArticlesList';
 import Article from './pages/Article';
@@ -24,7 +24,7 @@ function App() {
             {/* For each of these pages, we are going to define a separate Route component */}
             {/* 'path' property tells where the page should be loaded on what route and 
                 'element' property tells which page needs to be loaded */}
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Blog />} />
             <Route path="/about" element={<About />} />
             <Route path="/articles" element={<ArticlesList />} />
             <Route path="/articles/:articleId" element={<Article />} />
