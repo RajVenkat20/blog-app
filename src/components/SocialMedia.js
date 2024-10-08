@@ -16,38 +16,31 @@ const SocialMedia = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" />
+            <FontAwesomeIcon icon={faLinkedin} className="icon linkedin" title="LinkedIn Profile"/>
           </a>
           <a
             href="https://github.com/RajVenkat20"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} className="icon github" />
-          </a>
-          <a 
-            href="https://www.hackerrank.com/profile/733024CSE" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faHackerrank} className="icon hackerrank" />
+            <FontAwesomeIcon icon={faGithub} className="icon github" title="GitHub Profile"/>
           </a>
           <a href="mailto:mrajvenkatreddy@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope} className="icon mail" />
+            <FontAwesomeIcon icon={faEnvelope} className="icon mail" title="Email"/>
           </a>
           <a
             href="https://discordapp.com/users/773043180295815168"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faDiscord} className="icon discord" />
+            <FontAwesomeIcon icon={faDiscord} className="icon discord" title="Discord Profile"/>
           </a>
           <a
             href="https://x.com/mrajvenkatreddy"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faXTwitter} className="icon twitter" />
+            <FontAwesomeIcon icon={faXTwitter} className="icon twitter" title="Twitter Profile"/>
           </a>
         </div>
     </footer>
