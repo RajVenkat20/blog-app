@@ -1,8 +1,8 @@
 import React from "react";
-import project1 from "../images/Project1.png";
-import project2 from "../images/Project2.png";
-import project3 from "../images/Project3.png";
-import project4 from "../images/Project4.png";
+import project1 from "../images/projects/Project1.png";
+import project2 from "../images/projects/Project2.png";
+import project3 from "../images/projects/Project3.png";
+import project4 from "../images/projects/Project4.png";
 
 const projects = [
     {

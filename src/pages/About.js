@@ -40,7 +40,7 @@ const About = () => {
             <button className="btnAnimation about-buttons" onClick={viewResume}>View Resume</button>
         </div>  
         <hr className="interSectionHr"/>
-        <h2 className="sectionName">EDUCATION</h2>
+        <h1 className="sectionName">EDUCATION</h1>
         <Education 
                   degree="Master of Science in Computer Science"
                   university="Purdue University"
@@ -52,13 +52,13 @@ const About = () => {
                   yearRange="Jul 2017 - Aug 2021"
                   coursework="Design and Analysis of Algorithms, Distributed Systems and Cloud Computing, Artificial Intelligence, Machine Learning, Computer Networks, Information Security, OOPS, Discrete Mathematics, Data Structures and Algorithms, Operating Systems, Computer Architecture, Databases."/>          
         <hr className="interSectionHr"/>
-        <h2 className="sectionName">WORK EXPERIENCE</h2>
+        <h1 className="sectionName">WORK EXPERIENCE</h1>
         <Experience/>
         <hr className="interSectionHr"/>
-        <h2 className="sectionName">SKILLS</h2>
+        <h1 className="sectionName">SKILLS</h1>
         <Skills />
         <hr className="interSectionHr"/>
-        <h2 className="sectionName">PROJECTS</h2>
+        <h1 className="sectionName">PROJECTS</h1>
         <Projects />
         <SocialMedia />
         </>
