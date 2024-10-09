@@ -24,8 +24,8 @@ function App() {
             {/* For each of these pages, we are going to define a separate Route component */}
             {/* 'path' property tells where the page should be loaded on what route and 
                 'element' property tells which page needs to be loaded */}
-            <Route path="/" element={<Blog />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
             <Route path="/articles" element={<ArticlesList />} />
             <Route path="/articles/:articleId" element={<Article />} />
             <Route path="/login" element={<LoginPage />}/>

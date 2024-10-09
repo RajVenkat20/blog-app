@@ -21,10 +21,10 @@ const NavBar = () => {
                 {/* Navigation links */}
                 <ul className="nav-right">
                     <li>
-                        <Link className="menuOptions" to="/about">About</Link>
+                        <Link className="menuOptions" to="/">About</Link>
                     </li>
                     <li>
-                        <Link className="menuOptions" to="/">Blog</Link>
+                        <Link className="menuOptions" to="/blog">Blog</Link>
                     </li>
                     <li>
                         <Link className="menuOptions" to="/articles">Articles</Link>

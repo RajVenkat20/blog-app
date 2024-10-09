@@ -8,7 +8,7 @@ const FeaturedArticles = () => {
     return (
       <>
         <div className="featured-articles-section" onClick={() => {
-                            navigate('/articles/learn-react');
+                            navigate('/articles/system-design');
                         }}>
           <div className="featured-articles-left-column">
             <p>
