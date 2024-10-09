@@ -11,6 +11,8 @@ import AddCommentForm from "../components/AddCommentForm";
 import useUser from '../hooks/useUser';
 import articles from "./article-content";
 import SocialMedia from "../components/SocialMedia";
+import { BsHandThumbsUpFill } from "react-icons/bs";
+
 
 // describing them as function components and not as class components as they are outdated practices
 const Article = () => {
@@ -66,11 +68,11 @@ const Article = () => {
               ? <button className="btnAnimation" onClick={addUpvote}>{canUpvote ? 'Upvote' : 'Already Upvoted!'}</button>
               : <button className="btnAnimation">Log in to upvote</button>}
           <br></br>
+
         </div>
         <div>
-          <p><i>Published on: {article.publishedOn}</i></p>
-          
-          <p>This article has {articleInfo.upvotes} upvote(s)</p>
+          <p><i>Published on: {article.publishedOn}</i></p> |
+          <p className="published-upvote">This article has <i>{articleInfo.upvotes}</i> upvote(s)</p>
         </div>
         {article.image && <img className="articleImage" src={article.image} alt={article.altText} style={{ maxWidth: '100%'}} />}
         {article.content.map((paragraph, i) => (

@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <>
-      <div className="skillsSection">
+      <div className="skills-section">
         <div className="column skills-left-column">
           <p>
             <b>Languages</b>
@@ -9,7 +9,7 @@ const Skills = () => {
         </div>
         <div className="column skills-right-column">
         
-        <img title="Java" alt="Java" className="skillsIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+        <img title="Java" alt="Java" className="featured-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
         
         <img title="Python" alt="Python" className="skillsIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
           
@@ -22,7 +22,7 @@ const Skills = () => {
         <img title="C" className="skillsIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C"/>
         </div>
       </div>
-      <div className="skillsSection">
+      <div className="skills-section">
         <div className="column skills-left-column">
           <p>
             <b>Libraries and Frameworks</b>
@@ -47,7 +47,7 @@ const Skills = () => {
                            
         </div>
       </div>
-      <div className="skillsSection">
+      <div className="skills-section">
         <div className="column skills-left-column">
           <p>
             <b>Tools</b>
@@ -76,7 +76,7 @@ const Skills = () => {
         <img title="Jupyter" className="skillsIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg" alt="Jupyter"/>
         </div>
       </div>
-      <div className="skillsSection">
+      <div className="skills-section">
         <div className="column skills-left-column">
           <p>
             <b>Databases</b>

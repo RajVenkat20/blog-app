@@ -1,5 +1,6 @@
 import SocialMedia from "../components/SocialMedia";
 import blogImg from '../images/Blog.jpeg';
+import FeaturedArticles from "../components/FeaturedArticles";
 
 // describing them as function components and not as class components as they are outdated practices
 const Blog = () => {
@@ -25,8 +26,8 @@ const Blog = () => {
         <p className="justified-text">
         So grab a cup of coffee, take a look around, and don’t hesitate to join the conversation. Let’s explore together! 
         </p>
-        <h2>Featured Articles</h2>
-        <h1>Content to be added soon!</h1>
+        <h2>Featured</h2>
+        <FeaturedArticles/>
         <SocialMedia/>
         </>
     );

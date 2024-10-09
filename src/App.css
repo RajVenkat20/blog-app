@@ -261,8 +261,8 @@ input, textarea {
 }
 
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 175px;
+  height: 175px;
   border-radius: 50%;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.45);
 }
@@ -491,7 +491,7 @@ hr {
   margin-right: 10px;
 }
 
-.skillsSection {
+.skills-section {
   margin-bottom:40px;
   display: flex;
   justify-content: space-between;
@@ -499,11 +499,62 @@ hr {
   padding-right: 10px;
 }
 
-.skillsSection img {
+.skills-section img {
   transition: transform 0.3s ease;
 }
 
-.skillsSection img:hover {
+.skills-section img:hover {
   transform: scale(1.25);
 }
 
+.featured-articles-section {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-articles-section:hover {
+  transform: scale(1.05);
+  background-color: whitesmoke;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.45);
+}
+
+.featured-articles-left-column {
+  font-size: 20px;
+  padding-left: 25px;
+  width: 30%;
+}
+
+.featured-articles-right-column {
+  width: 70%;
+  margin-top: 30px;
+}
+
+#featured-article-type {
+  padding-top: 50px;
+}
+
+#featured-article-title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.featured-image {
+  border-radius: 10%;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+  height: 125px;
+  width: 175px;
+  margin-right: 10px;
+}
+
+.thumbsup {
+  height: 25px;
+  width: 25px;
+  margin-right: 5px;
+}
+
+.published-upvote{
+  margin-left: 20px;
+}

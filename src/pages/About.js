@@ -22,9 +22,9 @@ const About = () => {
             <p>Hello! I'm <b> Raj Venkat Reddy Mavuram</b>.</p>
         </div>
         <p className="justified-text">
-            I'm a Computer Science graduate student at Purdue University - West Lafayette. My journey in software development began with a solid foundation in various programming languages and technologies, and I have since developed a passion for building robust, scalable solutions.
+        I am a passionate Software Engineer with a strong foundation in both front-end and back-end development, specializing in technologies like Java, Python, JavaScript, Angular, and Oracle ADF. My professional experience spans building scalable, high-performance applications such as Oracle's OPERA Cloud, where I contributed to designing APIs, optimizing REST services, and implementing CI/CD pipelines using Docker and Kubernetes. With a solid academic background from Purdue University, I am driven by a deep interest in AI, machine learning, and scalable software architecture.
         </p>
-        <p className="justified-text">
+        {/* <p className="justified-text">
             Before starting my master’s program, I worked as a Software Engineer at Oracle India, where I was part of the team responsible for developing Oracle’s leading hospitality product, OPERA Cloud. During my time there, I contributed to various front-end and back-end projects, led UI development workflows, and improved the performance of critical APIs. One of the highlights of my career was working on a loyalty-based subscription service, which significantly boosted customer engagement.
         </p>
         <p className="justified-text">
@@ -32,7 +32,7 @@ const About = () => {
         </p>
         <p className="justified-text">
             I am passionate about creating innovative solutions and learning the latest advancements in AI and software engineering. In my spare time, I enjoy working on side projects that push my limits, such as developing AI-driven applications and exploring new frameworks.
-        </p>
+        </p> */}
         <div className="btn-container">
             <button className="btnAnimation about-buttons" onClick={() => {
                 navigate('/');

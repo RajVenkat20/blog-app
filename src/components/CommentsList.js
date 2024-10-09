@@ -9,7 +9,7 @@ const CommentsList = ({ comments }) => {
       <h3>Comments:</h3>
       {comments.map((comment) => (
         <div className="comment" key={comment.postedBy + ": " + comment.text}>
-          <h4>Posted by: <span>{user.email}</span></h4>
+          <h4>Posted by: <span>{comment.postedBy}</span></h4>
           <p>{comment.text}</p>
         </div>
       ))}
