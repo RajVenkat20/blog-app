@@ -1,5 +1,6 @@
 import sysDesign from '../images/articles/SystemsDesign.png';
 import mongoDB from '../images/articles/MongoDB.png';
+import nodeServer from '../images/articles/NodeServer.jpg';
 
 const articles = [
     {
@@ -63,8 +64,8 @@ const articles = [
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id 
             consequat quam. Vivamus accumsan dui in facilisis aliquet.`,
         ],
-        image: '',
-        altText: 'sysDesign'
+        image: nodeServer,
+        altText: 'NodeJS Server'
     },     {
         name: 'mongodb',
         publishedOn: "10/8/2024 1:30PM EST",

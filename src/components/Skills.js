@@ -9,7 +9,7 @@ const Skills = () => {
         </div>
         <div className="column skills-right-column">
         
-        <img title="Java" alt="Java" className="featured-image" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+        <img title="Java" alt="Java" className="skillsIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
         
         <img title="Python" alt="Python" className="skillsIcons" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
           

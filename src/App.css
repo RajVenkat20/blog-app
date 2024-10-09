@@ -512,6 +512,7 @@ hr {
   justify-content: space-between;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
 }
 
 .featured-articles-section:hover {
@@ -533,11 +534,13 @@ hr {
 
 #featured-article-type {
   padding-top: 50px;
+  color:black;
 }
 
 #featured-article-title {
   font-weight: bold;
   font-size: 1.2rem;
+  color:black;
 }
 
 .featured-image {
